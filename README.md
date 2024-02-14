@@ -124,7 +124,20 @@ node . mint DSV12KPb8m5b6YtfmqY89K6YqvdVwMYDPn dog.jpeg
 node . mint DSV12KPb8m5b6YtfmqY89K6YqvdVwMYDPn "text/plain;charset=utf-8" 576f6f6621 
 ```
 
+##### Lazy image minter
+This script will allow you to mint and forger large files.
+Make sure your Doge wallet has enough funds before proceeding.
 
+Make `image-mint.sh` executable
+```
+chmod +x image-mint.sh
+```
+Run the script with additional parameters
+```
+./image-mint.sh <address> <filename>
+```
+Example:
+./image-mint.sh <DAiBiq6oNcUZZV7xVUxJ59Skbovx8NkLwu> <doom.jpg>
 
 #### Incribing DRC-20
 
@@ -138,6 +151,21 @@ Examples:
 node . drc-20 mint DSV12KPb8m5b6YtfmqY89K6YqvdVwMYDPn dogi 1000
 ```
 
+##### DRC-20 bulk minter
+This script will allow you to bul mint a DRC-20.
+Make sure your Doge wallet has enough funds before proceeding.
+
+Make `bulk-mint.sh` executable
+```
+chmod +x bulk-mint.sh
+```
+Run the script with additional parameters
+```
+./bulk-mint.sh <max_count> <target_address> <token_name> <token_count>
+```
+Example:
+./bulk-mint.sh <100> <DAiBiq6oNcUZZV7xVUxJ59Skbovx8NkLwu> <dogi> <1000>
+Check the max token count you can mint for the specific token.
 
 ### Viewing Doginals
 
