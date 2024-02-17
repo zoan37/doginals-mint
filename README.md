@@ -24,10 +24,17 @@ Compare the "blocks" value to the current block height via a Dogecoin explorer l
 ### Install NodeJS
 
 Please head over to (https://github.com/nodesource/distributions#using-ubuntu) and follow the installation instructions.
+```
+curl -fsSL https://deb.nodesource.com/setup_21.x | sudo -E bash - &&\
+sudo apt-get install -y nodejs
+```
 
 Check if they are installed by running the following commands:
-`node -v` and `npm -v`
-
+`node -v`
+v21.6.2 
+`npm -v`
+10.2.4
+These recent verions works with this minter.
 
 
 ### Setup Shibescriptions
