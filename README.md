@@ -18,7 +18,8 @@ How to check if your node is in sync with the network.
 On your `dogecoin` install folder, type the command `dogecoin-cli getinfo`
 
 Compare the "blocks" value to the current block height via a Dogecoin explorer like: https://sochain.com/DOGE
-
+Do not mint anything yet unless your node is fully synced.
+You can proceed with installing the other requirements below.
 
 
 ### Install NodeJS
@@ -76,6 +77,10 @@ rpcport=22555
 server=1
 listen=1
 ```
+
+#### ⚠️⚠️⚠️ Important ⚠️⚠️⚠️
+Before proceeding, please make sure your node is fully synced.
+Have fun!
 
 ### Managing wallet balance
 
@@ -273,3 +278,13 @@ TESTNET=false
 #### I'm getting "insufficient priority" errors when minting
 
 The miner fee is too low. You can increase it up by putting FEE_PER_KB=300000000 in your .env file or just wait it out. The default is 100000000 but spikes up when demand is high.
+
+#### Other issues
+
+Try restarting your Dogecoin node.
+Stop your node by going to the `bin` folder and type the following command: `./dogecoin-cli stop`
+
+Always make sure that the requirements are met.
+
+If still stuck, ask ChatGPT or search online for other solutions.
+
