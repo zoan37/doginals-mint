@@ -31,10 +31,16 @@ sudo apt-get install -y nodejs
 ```
 
 Check if they are installed by running the following commands:
-`node -v`
+
+```
+node -v
+```
 v21.6.2 
-`npm -v`
+```
+npm -v
+```
 10.2.4
+
 These recent verions works with this minter.
 
 
