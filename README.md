@@ -14,6 +14,16 @@ This guide requires a bit of coding knowledge and running Ubuntu on your local m
 
 Follow the instructions here to setup and sync your Dogecoin node: (https://dogecoin.com/dogepedia/how-tos/operating-a-node/#linux-instructions)
 
+Create a `dogecoin.conf` at `/root/.dogecoin` folder. Set your own username/password.
+
+```
+rpcuser=ape
+rpcpassword=zord
+rpcport=22555
+server=1
+listen=1
+```
+
 How to check if your node is in sync with the network.
 On your `dogecoin` install folder, type the command `dogecoin-cli getinfo`
 
@@ -21,6 +31,7 @@ Compare the "blocks" value to the current block height via a Dogecoin explorer l
 Do not mint anything yet unless your node is fully synced.
 You can proceed with installing the other requirements below.
 
+==========
 
 ### Install NodeJS
 
@@ -42,6 +53,8 @@ npm -v
 10.2.4
 
 These recent verions works with this minter.
+
+==========
 
 
 ### Setup Shibescriptions
@@ -74,15 +87,7 @@ FEE_PER_KB=69000000
 ```
 You can get the current fee per kb from [here](https://blockchair.com/).
 
-Create a `dogecoin.conf` at `/root/.dogecoin` folder. Set your own username/password.
-
-```
-rpcuser=ape
-rpcpassword=zord
-rpcport=22555
-server=1
-listen=1
-```
+==========
 
 #### ⚠️⚠️⚠️ Important ⚠️⚠️⚠️
 Before proceeding, please make sure your node is fully synced.
@@ -113,6 +118,8 @@ When you are done minting, send the funds back:
 ```
 node . wallet send <address> <optional amount>
 ```
+
+==========
 
 
 ### Minting Doginals
@@ -179,10 +186,10 @@ chmod +x bulk-mint.sh
 ```
 Run the script with additional parameters
 ```
-./bulk-mint.sh <max_count> <target_address> <token_name> <token_count>
+./bulk-mint.sh <max_count> <target_address> <token_name>
 ```
 Example:
-./bulk-mint.sh <100> <DAiBiq6oNcUZZV7xVUxJ59Skbovx8NkLwu> <dogi> <1000>
+./bulk-mint.sh <100> <DAiBiq6oNcUZZV7xVUxJ59Skbovx8NkLwu> <dogi>
 Check the max token count you can mint for the specific token.
 
 ### Viewing Doginals
@@ -198,6 +205,9 @@ And open your browser to:
 ```
 http://localhost:3000/tx/15f3b73df7e5c072becb1d84191843ba080734805addfccb650929719080f62e
 ```
+
+==========
+
 
 ### Additional Info
 
