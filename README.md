@@ -318,3 +318,32 @@ Always make sure that the requirements are met.
 
 If still stuck, ask ChatGPT or search online for other solutions.
 
+==========
+
+### Screenshots
+
+* Checking `node` and `npm` versions
+* Cloning repository `git clone https://github.com/zachzwei/doginals.git`
+* Running `npm install`
+* Generating a new wallet `node . wallet new`
+  
+![image](https://github.com/zachzwei/doginals/assets/35627271/283acfe4-ce3e-4987-98f5-af195ed2dbb6)
+
+* Checking wallet balance after sending some ÐOGE. `node . wallet sync`
+
+![image](https://github.com/zachzwei/doginals/assets/35627271/c827ec11-e1ba-4203-aa31-0b8e34e062b5)
+
+
+* Creating `.env` file and viewing it.
+
+![image](https://github.com/zachzwei/doginals/assets/35627271/56d96d02-d4c1-4bfe-8a7d-c4aa341cf655)
+
+* Test mint of an image
+
+![image](https://github.com/zachzwei/doginals/assets/35627271/d71f0fa9-1f0b-4bcc-8695-6d3fda697467)
+
+
+
+
+
+
