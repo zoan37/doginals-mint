@@ -14,6 +14,9 @@ This guide requires a bit of coding knowledge and running Ubuntu on your local m
 
 Follow the instructions here to setup and sync your Dogecoin node: (https://dogecoin.com/dogepedia/how-tos/operating-a-node/#linux-instructions)
 
+### ⚠️⚠️⚠️ Important ⚠️⚠️⚠️
+A configuration file needs to be created before you continue with the sync.
+Stop your node `./dogecoin-cli stop'
 Create a `dogecoin.conf` at `/root/.dogecoin` folder. Set your own username/password.
 
 ```
@@ -23,6 +26,7 @@ rpcport=22555
 server=1
 listen=1
 ```
+Start your node again `./dogecoind -daemon`
 
 How to check if your node is in sync with the network.
 On your `dogecoin` install folder, type the command `dogecoin-cli getinfo`
@@ -53,6 +57,16 @@ npm -v
 10.2.4
 
 These recent verions works with this minter.
+#### Cannot install Nodejs?
+If you are having trouble installing the latest version, remove nodejs and npm by using these commands.
+```
+sudo apt-get remove nodejs
+sudo apt-get remove npm
+npm list -g --depth=0
+sudo apt-get autoremove
+```
+The `node-v` and `npm-v` commands should show an error that they are not installed.
+Procced with the install instructions above.
 
 ==========
 
