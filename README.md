@@ -22,7 +22,13 @@ Stop your node:
 ./dogecoin-cli stop
 ```
 
-Create a `dogecoin.conf` at `/root/.dogecoin` folder. Set your own username/password.
+Create a `dogecoin.conf` file at `/root/.dogecoin` folder. Set your own username/password.
+
+```
+nano dogecoin.conf
+```
+
+Copy and paste this to the created file. Save it!
 
 ```
 rpcuser=ape
@@ -33,7 +39,12 @@ listen=1
 txindex=1
 rpcallowip=127.0.0.1
 ```
-Start your node again `./dogecoind -daemon`
+
+Start your node again 
+
+```
+./dogecoind -daemon
+```
 
 How to check if your node is in sync with the network.
 On your `dogecoin` install folder, type the command `dogecoin-cli getinfo`
