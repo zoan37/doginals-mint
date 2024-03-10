@@ -16,7 +16,12 @@ Follow the instructions here to setup and sync your Dogecoin node: (https://doge
 
 ### ⚠️⚠️⚠️ Important ⚠️⚠️⚠️
 A configuration file needs to be created before you continue with the sync.
-Stop your node `./dogecoin-cli stop'
+Stop your node: 
+
+```
+./dogecoin-cli stop
+```
+
 Create a `dogecoin.conf` at `/root/.dogecoin` folder. Set your own username/password.
 
 ```
@@ -25,6 +30,8 @@ rpcpassword=zord
 rpcport=22555
 server=1
 listen=1
+txindex=1
+rpcallowip=127.0.0.1
 ```
 Start your node again `./dogecoind -daemon`
 
