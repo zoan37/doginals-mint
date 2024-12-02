@@ -181,6 +181,25 @@ node . mint DSV12KPb8m5b6YtfmqY89K6YqvdVwMYDPn dog.jpeg
 node . mint DSV12KPb8m5b6YtfmqY89K6YqvdVwMYDPn "text/plain;charset=utf-8" 576f6f6621 
 ```
 
+##### Minting large files
+
+When inscribing large files, you may encounter the "too-long-mempool-chain" error. This script will allow you to retry the minting process.
+
+NOTE: This script doesn't have an explicit stopping mechanism--after a successful mint, it will continue retrying until the max retries are reached, so it may mint multiple times. So you should stop the script manually after the mint is done.
+* I used this script to mint a ~1mb .glb file. I could write a stopping mechanism but I would need to test it.
+
+Make `retry-mint.sh` executable
+```
+chmod +x retry-mint.sh
+```
+
+Fill in the address and file parameters in the `retry-mint.sh` script.
+
+Run the script
+```
+./retry-mint.sh
+```
+
 ##### Lazy image minter
 This script will allow you to mint and forger large files.
 Make sure your Doge wallet has enough funds before proceeding.
