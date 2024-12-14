@@ -48,7 +48,7 @@
         <div class="model-container" id="captureArea">
             <model-viewer
                 id="modelViewer"
-                src="./bat.glb"
+                src="./megaphone.glb"
                 alt="3D model"
                 shadow-intensity="1"
                 exposure="1"
@@ -57,7 +57,9 @@
                 ar-modes="webxr scene-viewer quick-look"
                 ar-scale="auto"
                 loading="eager"
-                camera-orbit="-90deg 90deg 3m"
+                min-camera-orbit="auto auto auto"
+                max-camera-orbit="auto auto 20m"
+                camera-orbit="-90deg 90deg 1.35m"
                 field-of-view="30deg"
                 auto-rotate
                 rotation-per-second="-60deg">
